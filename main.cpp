@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
 
 //global board variable
 std::string board[3][3] = {{"[ ]","[ ]","[X]"},
@@ -91,9 +92,29 @@ bool evalVictory() {
     }
 }
 
-void ai(std::string boardState) {
+class ai{
+    protected:
+        std::string aiBoard;
 
-}
+        void aiCalc(std::string boardState) {
+
+        }
+
+        void makeMove(std::string board) {
+            for(int i = 0; i < 9; i++){
+                for(int z = 0; z < 3; z++){
+                    if(!(board[z][i]) == "[O]"){
+                        aiCalc(board);
+                    }
+                }
+            }
+        }
+
+    public:
+        ai(){
+            aiBoard = board;
+        }
+};
 
 int main(void)
 {
