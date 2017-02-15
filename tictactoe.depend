@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1487136392 source:c:\users\varun\tictactoe\main.cpp
+	<iostream>
+	<string>
+
