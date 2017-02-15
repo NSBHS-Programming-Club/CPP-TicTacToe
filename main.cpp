@@ -93,26 +93,17 @@ bool evalVictory() {
 }
 
 class ai{
-    protected:
-        std::string aiBoard;
-
-        void aiCalc(std::string boardState) {
-
-        }
-
-        void makeMove(std::string board) {
+    private:
+        std::string aiBoard[3][3];
+        void makeMove(std::string opponentVal) {
+            std::string aiTestBoard[3][3] = board;
             for(int i = 0; i < 9; i++){
                 for(int z = 0; z < 3; z++){
-                    if(!(board[z][i]) == "[O]"){
-                        aiCalc(board);
+                    if(!(aiTestBoard[z][i] == "[O]")){
+
                     }
                 }
             }
-        }
-
-    public:
-        ai(){
-            aiBoard = board;
         }
 };
 
